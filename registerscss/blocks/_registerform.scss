@@ -1,0 +1,56 @@
+.form-box {
+  background-color: #f4e8d3;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px #0000001a;
+  display: grid;
+  gap: 15px;
+  width: 100%;
+}
+.form-box_name {
+  text-align: center;
+  color: #1a2a3a;
+}
+input {
+  background-color: #e5d5bc;
+  border: 1px solid #d4c0a5;
+  color: #2b3a4a;
+  padding: 12px;
+  border-radius: 5px;
+  font-size: 16px;
+}
+input::placeholder {
+  color: #7a6e5d;
+}
+.box {
+  position: relative;
+}
+.fa-regular {
+  position: absolute;
+  right: 10px;
+  top: 15px;
+}
+button {
+  background-color: #2b3a4a;
+  color: #f4e8d3;
+  border: none;
+  padding: 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.4s linear;
+}
+button:hover {
+  background-color: #357abd;
+}
+
+button:active {
+  transform: scale(0.98);
+}
+@media only screen and (min-width: 834px) {
+  .form-box {
+    width: 450px;
+  }
+  .inp-password {
+    width: 390px;
+  }
+}

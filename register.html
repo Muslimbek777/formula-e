@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./styles/register.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form class="form-box">
+        <h1 class="form-box_name">Register</h1>
+        <input
+          required
+          minlength="3"
+          maxlength="80"
+          class="inp-name"
+          type="text"
+          placeholder="First name"
+        />
+        <input
+          required
+          minlength="2"
+          maxlength="80"
+          class="inp-lastname"
+          type="text"
+          placeholder="Last name"
+        />
+        <input
+          required
+          class="inp-email"
+          type="email"
+          placeholder="Enter your email"
+        />
+        <div class="box">
+          <input
+            required
+            class="inp-password"
+            type="password"
+            placeholder="Enter your password"
+          />
+          <i class="fa-regular fa-eye"></i>
+          <i class="fa-regular fa-eye-slash"></i>
+        </div>
+        <button type="submit">Sign up</button>
+      </form>
+    </div>
+    <script src="./js/register.js"></script>
+  </body>
+</html>

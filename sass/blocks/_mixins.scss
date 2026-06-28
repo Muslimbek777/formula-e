@@ -1,0 +1,57 @@
+@mixin flex-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@mixin flex-boxs($gap) {
+  display: flex;
+  align-items: center;
+  gap: $gap;
+}
+@mixin flex-box-2($justify) {
+  display: flex;
+  align-items: center;
+  justify-content: $justify;
+}
+@mixin flex-box-3($align, $justify, $gap) {
+  display: flex;
+  align-items: $align;
+  justify-content: $justify;
+  gap: $gap;
+}
+@mixin flex-box-4($gap) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: $gap;
+  flex-wrap: wrap;
+}
+@mixin list {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+}
+@mixin background($url) {
+  background-image: $url;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+@mixin grid-box($gap) {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  gap: $gap;
+}
+@mixin grid-boxs($justify, $gap) {
+  display: grid;
+  align-items: center;
+  justify-content: $justify;
+  gap: $gap;
+}
+@mixin grid-box-2($align, $justify, $gap) {
+  display: grid;
+  align-items: $align;
+  justify-content: $justify;
+  gap: $gap;
+}

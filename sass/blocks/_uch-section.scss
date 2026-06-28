@@ -1,0 +1,149 @@
+@use "./mixins" as m;
+
+.uch-section {
+  padding-block: 30px;
+}
+.main-ul {
+  @include m.list;
+  @include m.grid-box(30px);
+}
+.main-ul_li {
+  @include m.grid-box(10px);
+  width: 100%;
+  background-color: #1a1d20;
+  padding: 10px;
+  border: 2px solid #ffffff14;
+  border-radius: 12px;
+  transition:
+    transform 0.3s ease,
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+  text-align: center;
+}
+.main-ul_li:hover {
+  transform: translateY(-8px);
+  border: 2px solid #e10600;
+  box-shadow: 0 10px 20px #e1060026;
+  cursor: pointer;
+}
+.main-ul_li__name {
+  margin: 0;
+  font-size: 20px;
+}
+.fbir {
+  color: #e10600;
+  text-shadow: 0 0 8px #e1060066;
+}
+.moto {
+  color: #ff5500;
+  text-shadow:
+    0 0 10px #ff550099,
+    0 0 20px #ff550033;
+}
+.wec {
+  color: #00e5ff;
+  text-shadow: 0 0 8px #00e5ff66;
+}
+.wrc {
+  color: #fff200;
+  text-shadow:
+    0 0 10px #fff20099,
+    0 0 20px #fff20033;
+}
+.gt {
+  color: #d4af37;
+  text-shadow:
+    0 0 10px #d4af3780,
+    0 0 20px #d4af3733;
+}
+.nascar {
+  color: #ffd200;
+  text-shadow:
+    0 0 10px #ffd20080,
+    0 0 20px #ffd20033;
+}
+.indycar {
+  color: #ff003c;
+  text-shadow:
+    0 0 10px #ff003c99,
+    0 0 20px #ff003c33;
+}
+.main-ul_li__img {
+  width: 100%;
+}
+.main-name {
+  text-align: center;
+  color: #fff200;
+  margin: 0;
+  margin-bottom: 30px;
+}
+.main-ul_li__btn {
+  width: 100%;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #1a1d22;
+  border: 2px solid #ffffff1a;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.main-ul_li__btn:active {
+  transform: scale(0.97);
+}
+.fbir-btn:hover {
+  background: linear-gradient(135deg, #e10600, #ff4500);
+  border: 2px solid #e10600;
+  box-shadow: 0 0 15px #e1060099;
+}
+.fe-btn:hover {
+  background: linear-gradient(135deg, #00e5ff, #0088ff);
+  border: 2px solid #00e5ff;
+  box-shadow: 0 0 15px #00e5ff99;
+}
+.wec-btn:hover {
+  background: linear-gradient(135deg, #00ff88, #00aa50);
+  border: 2px solid #00ff88;
+  box-shadow: 0 0 15px #00ff8899;
+}
+.wrc-btn:hover {
+  background: linear-gradient(135deg, #fff200, #ffaa00);
+  border: 2px solid #fff200;
+  box-shadow: 0 0 15px #fff20099;
+}
+.gt-btn:hover {
+  background: linear-gradient(135deg, #d4af37, #8a6f27);
+  border: 2px solid #d4af37;
+  box-shadow: 0 0 15px #d4af3780;
+}
+.moto-btn:hover {
+  background: linear-gradient(135deg, #ff5500, #ff0000);
+  border: 2px solid #ff5500;
+  box-shadow: 0 0 15px #ff550099;
+}
+.indycar-btn:hover {
+  background: linear-gradient(135deg, #ff003c, #990024);
+  border: 2px solid #ff003c;
+  box-shadow: 0 0 15px #ff003c99;
+}
+.nascar-btn:hover {
+  background: linear-gradient(135deg, #ffd200, #ff7700);
+  border: 2px solid #ffd200;
+  box-shadow: 0 0 15px #ffd20080;
+}
+@media only screen and (min-width: 834px) {
+  .main-ul {
+    @include m.flex-box-4(30px);
+  }
+  .main-ul_li {
+    width: 380px;
+    @include m.grid-box(15px);
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .main-ul_li {
+    width: 390px;
+  }
+}
