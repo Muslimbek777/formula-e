@@ -31,17 +31,17 @@ f1Btn.addEventListener("click", (evt) => {
 });
 
 wecBtn.addEventListener("click", (evt) => {
-  window.location.replace("https://food-delivery-about-muslim.netlify.app/");
+  window.location.replace("https://wec-muslim.netlify.app/");
 });
 
 gtBtn.addEventListener("click", (evt) => {
-  window.location.replace("https://food-delivery-about-muslim.netlify.app/");
+  window.location.replace("https://gt3-muslim.netlify.app/");
 });
 
 wrcBtn.addEventListener("click", (evt) => {
-  window.location.replace("https://food-delivery-about-muslim.netlify.app/");
+  window.location.replace("https://wrc-muslim.netlify.app/");
 });
 
 motoBtn.addEventListener("click", (evt) => {
-  window.location.replace("https://food-delivery-about-muslim.netlify.app/");
+  window.location.replace("https://moto-muslim.netlify.app/");
 });
